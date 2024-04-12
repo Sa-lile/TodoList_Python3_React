@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
-    "daisyui": "^4.4.18",
+    "daisyui": "^4.4.23",
     "postcss": "^8.4.32",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -32,5 +32,19 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "vite": "^4.4.5"
-  }
+  },
+    "rules": {
+      "prettier/prettier": ["error", {"singleQuote": false}],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/jsx-uses-react": 2,
+      "react/jsx-uses-vars": 2,
+      "react/react-in-jsx-scope": 2,
+      
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/display-name": 0,
+      "react/prop-types": [0, { "ignore": ["children"] }],
+      "jsx-a11y/anchor-is-valid": 0
+    }
+  
 }
